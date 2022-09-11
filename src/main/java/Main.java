@@ -1,6 +1,4 @@
-import recursion.Fib;
-import recursion.HeadNTails;
-import recursion.TowerHanoi;
+import graph.GraphUsingMap;
 
 public class Main {
 
@@ -9,6 +7,12 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        System.out.println(add(4,5));
+
+        GraphUsingMap graphUsingMap = new GraphUsingMap(5, false);
+        graphUsingMap.addEdge(1, 2);
+        graphUsingMap.addEdge(2, 3);
+        graphUsingMap.addEdge(1, 3);
+
+        System.out.println(graphUsingMap.toString());
     }
 }
