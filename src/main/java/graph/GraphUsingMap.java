@@ -1,9 +1,7 @@
 package graph;
 
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
+import java.util.*;
 
 public class GraphUsingMap {
     private int capacity;
@@ -36,6 +34,7 @@ public class GraphUsingMap {
        }
 
     }
+
 
     @Override
     public String toString() {
