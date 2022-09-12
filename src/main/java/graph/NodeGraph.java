@@ -81,7 +81,7 @@ public class NodeGraph {
                 System.out.print(" -> ");
                 currentNode.children.forEach(node -> {
                     if(!visited.contains(node.getValue())){
-                        System.out.print(node.value);
+                        System.out.print(node.value + ", ");
                         nodeQueue.add(node);
                     };
                 });

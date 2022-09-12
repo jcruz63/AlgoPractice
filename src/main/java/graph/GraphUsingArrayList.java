@@ -18,11 +18,11 @@ public class GraphUsingArrayList {
 
     }
 
-    public void addEdge(int startVertex, int endVertex){
-        list[startVertex].add(endVertex);
-        if(undirected){
-            list[endVertex].add(startVertex);
-        }
+    public void addEdge(int parentVertex, int childVertex){
+//        list[parentVertex].add(endVertex);
+//        if(undirected){
+//            list[endVertex].add(startVertex);
+//        }
     }
 
 
