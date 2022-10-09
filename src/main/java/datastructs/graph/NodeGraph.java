@@ -1,4 +1,4 @@
-package graph;
+package datastructs.graph;
 
 import java.util.*;
 
@@ -56,7 +56,7 @@ public class NodeGraph {
             currentNode.children.forEach(node -> {
                 if(!visited.contains(node.getValue())){
                     nodeQueue.add(node);
-                };
+                }
             });
         }
 
@@ -83,7 +83,7 @@ public class NodeGraph {
                     if(!visited.contains(node.getValue())){
                         System.out.print(node.value + ", ");
                         nodeQueue.add(node);
-                    };
+                    }
                 });
             }
             System.out.println();

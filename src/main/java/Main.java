@@ -1,32 +1,22 @@
-import graph.NodeGraph;
+import designPatterns.creational.prototype.Direction;
+import designPatterns.creational.prototype.GameUnit;
+import designPatterns.creational.prototype.Swordsman;
 
 public class Main {
 
-    public static int add(int a, int b){
-        return a+b;
-    }
 
     public static void main(String[] args) {
+        GameUnit gameUnit = new GameUnit();
 
-//        GraphUsingMap graphUsingMap = new GraphUsingMap(5, false);
-//        graphUsingMap.addEdge(1, 2);
-//        graphUsingMap.addEdge(2, 3);
-//        graphUsingMap.addEdge(1, 3);
-//
-//        System.out.println(graphUsingMap);
-//
-//        GraphUsingArrayList graphUsingArrayList = new GraphUsingArrayList(5, false);
-//        graphUsingArrayList.addEdge(1, 2);
-//        graphUsingArrayList.addEdge(2, 3);
-//        graphUsingArrayList.addEdge(1,3);
-//
-//        System.out.println(graphUsingArrayList);
-        NodeGraph nodeGraph = new NodeGraph(0);
-        nodeGraph.addNode(0, 1);
-        nodeGraph.addNode(0, 2);
-        nodeGraph.addNode(0, 3);
-        nodeGraph.addNode(2, 4);
+        try {
+            GameUnit unit2 = gameUnit.clone();
+            gameUnit.move(Direction.UP, 1);
+            System.out.println(gameUnit);
+            System.out.println(unit2);
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
 
-        nodeGraph.breathFirstPrint();
+
     }
 }

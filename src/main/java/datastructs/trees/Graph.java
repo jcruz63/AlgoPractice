@@ -1,12 +1,12 @@
 //class Node{
 //    private char data;
-//    private trees.Node[] nodes;
+//    private datastructs.trees.Node[] nodes;
 //
 //    Node(char data) {
 //        this.data = data;
 //    }
 //
-//    Node(char data, trees.Node[] nodes){
+//    Node(char data, datastructs.trees.Node[] nodes){
 //        this.data = data;
 //        this.nodes = nodes;
 //    }
@@ -19,16 +19,16 @@
 //        this.data = data;
 //    }
 //
-//    public trees.Node[] getNodes() {
+//    public datastructs.trees.Node[] getNodes() {
 //        return nodes;
 //    }
 //
-//    public void setNodes(trees.Node[] nodes) {
+//    public void setNodes(datastructs.trees.Node[] nodes) {
 //        this.nodes = nodes;
 //    }
 //}
 //
 //public class Graph {
-//    private trees.Node root;
+//    private datastructs.trees.Node root;
 //
 //}

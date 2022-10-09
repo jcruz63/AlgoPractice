@@ -1,4 +1,4 @@
-package trees;
+package datastructs.trees;
 
 class Node{
     private char data;
