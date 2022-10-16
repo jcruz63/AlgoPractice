@@ -1,22 +1,14 @@
-import designPatterns.creational.prototype.Direction;
-import designPatterns.creational.prototype.GameUnit;
-import designPatterns.creational.prototype.Swordsman;
+import challenges.leetcode.RunningSum1dArray;
+
+import java.util.Arrays;
 
 public class Main {
 
 
     public static void main(String[] args) {
-        GameUnit gameUnit = new GameUnit();
-
-        try {
-            GameUnit unit2 = gameUnit.clone();
-            gameUnit.move(Direction.UP, 1);
-            System.out.println(gameUnit);
-            System.out.println(unit2);
-        } catch (CloneNotSupportedException e) {
-            e.printStackTrace();
-        }
-
+        int[] test = {-3,2,-3,4,2};
+        int[] result = RunningSum1dArray.runningSum(test);
+        System.out.println(Arrays.toString(result));
 
     }
 }
