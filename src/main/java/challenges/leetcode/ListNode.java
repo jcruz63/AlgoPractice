@@ -1,6 +1,8 @@
 package challenges.leetcode;
 
-class ListNode {
+import org.jetbrains.annotations.NotNull;
+
+class ListNode{
     int val;
     ListNode next;
 
@@ -33,5 +35,32 @@ class ListNode {
                 "val=" + val +
                 ", next=" + next +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this){
+            return true;
+        }
+
+        if(!(obj instanceof ListNode)){
+            return false;
+        }
+
+        ListNode node = (ListNode) obj;
+        ListNode temp = this;
+
+        while (node != null){
+            if(temp == null){
+                return false;
+            }
+            if(node.val != temp.val){
+                return false;
+            }
+            node = node.next;
+            temp = temp.next;
+        }
+
+        return temp == null;
     }
 }

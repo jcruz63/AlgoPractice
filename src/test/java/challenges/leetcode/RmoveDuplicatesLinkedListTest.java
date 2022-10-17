@@ -10,6 +10,6 @@ class RmoveDuplicatesLinkedListTest {
     void deleteDuplicates() {
         int[] sample = {1, 1, 2};
         ListNode head = ListNode.listFromArray(sample);
-        System.out.println(head);
+
     }
 }
